@@ -697,11 +697,9 @@
 
 % Define a footer for CV
 % Usage: \makecvfooter{<left>}{<center>}{<right>}
-\newcommand*{\makecvfooter}[3]{%
+\newcommand*{\makecvfooter}[1]{%
   \fancyfoot{}
-  \fancyfoot[L]{\footerstyle{#1}}
-  \fancyfoot[C]{\footerstyle{#2}}
-  \fancyfoot[R]{\footerstyle{#3}}
+  \fancyfoot[C]{\footerstyle{#1}}
 }
 
 % Define a section for CV
@@ -778,6 +776,19 @@
       {}
       {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
+}
+
+\newcommand*{\cventrytwopositions}[8]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+      \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+      \entrypositionstyle{#6} & \entrydatestyle{#7} \\
+      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#8}} \\
+      \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+  \end{tabular*}%
 }
 
 % Define an environment for cvhonor
