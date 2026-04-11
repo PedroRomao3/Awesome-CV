@@ -1,0 +1,132 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.1cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+\name{Pedro}{Romão}
+\address{Porto, Portugal}
+\mobile{(+351) 964 944 442}
+\email{pedroromao.pmr@gmail.com}
+% Uncomment and add your github/linkedin if you want!
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \x{x-id}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+\recipient
+  {Engineering Hiring Team}
+  {Bending Spoons\\Milan, Italy}
+\letterdate{\today}
+\lettertitle{Job Application for Graduate Infrastructure Engineer}
+\letteropening{To the Engineering Hiring Team,}
+\letterclosing{Best regards,}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Claud D. Park~~~·~~~Cover Letter}
+%   {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a Master's student in Informatics and Computing Engineering at the University of Porto. Throughout my studies and projects, I have gravitated toward the lower levels of the tech stack. I genuinely enjoy figuring out how complex systems work from the ground up. I am looking to start my career in a challenging environment where I can take real responsibility for what I build and become a more competent engineer every day.
+
+\lettersection{Why Bending Spoons?}
+When I was looking into Bending Spoons, I watched a few videos of your team. What stuck with me was hearing "Spooners" talk about how much they learn every day and their focus on building projects that actually matter. That is exactly what I am looking for. Managing the infrastructure behind your massive product portfolio means dealing with real, complex scaling problems. I want to start my career in an environment that forces me to step up, where I can learn from a highly capable team, and where the systems I help maintain make a difference to millions of users.
+
+\lettersection{Why Me?}
+During my degree, I've always cared more about making things work than just studying the theory. That's why I spent a majority of my time working on side projects. Formula Student was a great opportunity to apply my knowledge in a more real-world setting and work at the intersection of hardware and software in a team of talented and ambitious individuals. Similarly, working as a Teaching Assistant for a low-level programming course has forced me to prove I actually understand the fundamentals I am building on, and I have come to understand that teaching concepts helps me formulate them more clearly and simply, which solidifies my own understanding of the material. Right now, my Master's thesis involves building a dashboard for an ESA mission, a new challenge that has taken me to a more serious environment. By the time I finish my degree, I will have experience working on projects that require responsibility and that have developed my competence in a variety of areas, from social to technical.
+
+Recently, I've realized something about myself: the people around me dictate how fast I grow. I want to be surrounded by highly competent engineers because that is what forces me to be competent. I am looking for a team where the baseline expectations are intimidating.
+
+Finally, regarding the Milan requirement: I just finished my Erasmus at Politecnico di Torino, which makes relocating to Italy smoother.
+
+\lettersection{What's Next?}
+I know the hiring process relies on challenging technical assessments. As a graduate, I know I still have a lot to learn, but I am looking forward to the opportunity to tackle them and show you my potential and how I approach new problems. Thanks for your time.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
